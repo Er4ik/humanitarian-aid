@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+:root {
+    --font: 'Source Sans Pro';
+    --color-bg: #F4F3F0;
+    --color-black: #202020;
+    --color-red: #BB1128;
+    --color-red-light: #F0544F;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--color-bg);
+    color: --color-black;
+    font-family: var(--font);
+}
+
+.bg_right {
+    position: absolute;
+    height: 900px;
+    left: 70%;
+    right: -10%;
+    top: -450px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(58, 95, 86, 0.55) 0%, rgba(58, 95, 86, 0) 100%);
+}
+
+.bg_left {
+    position: absolute;
+    height: 800px;
+    left: -15.42%;
+    right: 65.21%;
+    top: 300px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(184, 125, 88, 0.8) 0%, rgba(184, 125, 88, 0) 100%);
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-info {
+    width: 30%;
+    display: flex;
+    margin-top: 7%;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.btn-5 {
+    width: 230px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background-color: #444857;
+    background-image: linear-gradient(315deg, rgba(184, 125, 88, 0.8) 0%, rgba(58, 95, 86, 0.55) 74%);
+}
+
+.btn-5:hover {
+    color: #3b3f4b;
+    background: transparent;
+    box-shadow: none;
+}
+.btn-5:before,
+.btn-5:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    width: 0;
+    background: #3b3f4b;
+    box-shadow:
+    -1px -1px 5px 0px #fff,
+    7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+}
+
+.btn-5:after{
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.btn-5:hover:before,
+.btn-5:hover:after{
+    width: 100%;
+    transition: 800ms ease all;
+}
