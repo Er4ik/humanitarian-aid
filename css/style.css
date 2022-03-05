@@ -45,7 +45,7 @@ body {
 }
 
 .main-info {
-    width: 30%;
+    width: 50%;
     display: flex;
     margin-top: 7%;
     flex-direction: column;
@@ -114,4 +114,21 @@ body {
 .btn-5:hover:after{
     width: 100%;
     transition: 800ms ease all;
+}
+
+@media (max-width: 700px) { 
+    body {
+        height: auto;
+        width: 100%;
+        overflow:auto;
+    }
+
+    .main-info {
+        width: 60%;
+        align-items: center;
+    }
+
+    .main-info p {
+        margin: 20px auto;
+    }
 }
