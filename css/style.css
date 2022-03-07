@@ -173,9 +173,18 @@ body {
     .main-info {
         width: 60%;
         align-items: center;
+        margin: 50px auto;
     }
 
     .main-info p {
         margin: 20px auto;
+    }
+
+    .main-info h1 {
+        font-size: 35px;
+    }
+
+    .main-info h3 {
+        font-size: 25px;
     }
 }
