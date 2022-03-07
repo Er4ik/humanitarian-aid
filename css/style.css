@@ -17,6 +17,10 @@ body {
     font-family: var(--font);
 }
 
+.bg {
+    z-index: 1;
+}
+
 .bg_right {
     position: absolute;
     height: 900px;
@@ -69,6 +73,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     height: 70%;
+    z-index: 100;
 }
 
 .main-info h1 {
@@ -93,6 +98,10 @@ body {
 .p-head {
     font-style: italic;
     font-weight: 300;
+}
+
+.p-bottom {
+    font-size: 22px
 }
 
 .custom-btn {
@@ -171,7 +180,7 @@ body {
     }
 
     .main-info {
-        width: 60%;
+        width: 70%;
         align-items: center;
         margin: 50px auto;
     }
